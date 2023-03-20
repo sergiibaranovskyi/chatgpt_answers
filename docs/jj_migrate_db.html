@@ -42,8 +42,14 @@
     <h2>Question:</h2>
     <p>
         Let's assume we have MariaDB cluster(ClusterA). It has one master node, one master-standby node, and one slave node. We have replicas master -&gt; master-standby and master-&gt; slave. And it has several quite big DBs (dbA1, dbA2, dbA3), each of them approx 1 TB
+        </p>
+        <p>
         We also have another cluster (ClusterB) with the same node structure and replications and several Dbs (dbB1, dbB2, and dbB3).
+    </p>
+    <p>
         What do we need - to replicate dbA1 from ClusterA to ClusterB, better without downtime. At this time existing replicas in ClusterA and ClusterB should be intact, new replica for dbA1 should be made from ClusterA to ClusterB. And dbA1 should be replicated on all nodes on ClusterB
+    </p>
+    <p>
         How to do it?
     </p>
     <h2>Answer:</h2>
